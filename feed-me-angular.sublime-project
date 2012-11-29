@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/windyarts/work/github/feed-me-angular",
+      "folder_exclude_patterns": [".sass-cache", "dist"]
+		}
+	],
+  "settings":
+  {
+    "tab_size": 2
+  }
+}

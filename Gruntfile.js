@@ -30,10 +30,7 @@ module.exports = function( grunt ) {
       dist: {
         // http://compass-style.org/help/tutorials/configuration-reference/#configuration-properties
         options: {
-          css_dir: 'temp/styles',
-          sass_dir: 'app/styles',
-          images_dir: 'app/images',
-          javascripts_dir: 'temp/scripts',
+          config: 'compass.config.rb',
           force: true
         }
       }
@@ -126,6 +123,7 @@ module.exports = function( grunt ) {
     rev: {
       js: 'scripts/**/*.js',
       css: 'styles/**/*.css',
+      // font: 'fonts/**/*'
       img: 'images/**'
     },
 
@@ -148,7 +146,7 @@ module.exports = function( grunt ) {
 
     // Optimizes JPGs and PNGs (with jpegtran & optipng)
     img: {
-      dist: '<config:rev.img>'
+      dist: 'images/**'
     },
 
     // rjs configuration. You don't necessarily need to specify the typical
